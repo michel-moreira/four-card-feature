@@ -64,19 +64,25 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "supervisor t-builder"
-      "calculator karma";
+      "karma calculator";
     place-items: center;
     place-content: center;
     padding: 4rem;
     max-width: 100%;
   }
   .c-cards__card {
-    width: 100%;
+    padding: 2rem 3rem;
+    width: 345px;
+  }
+  .c-cards__description {
+    font-size: 1.3rem;
+    
+    padding-right: 5rem;
   }
   .c-cards__card.supervisor {
-    transform: translateY(0);
+    transform: none;
   }
   .c-cards__card.calculator {
-    transform: translateY(0);
+    transform: none;
   }
 }
