@@ -1,0 +1,120 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  background-color: var(--veryLightGray);
+}
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 100%;
+}
+/* ============================ */
+.c-top-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 6rem 2rem auto;
+}
+.c-top-info__title {
+  font-weight: 300;
+  font-size: 3.6rem;
+  max-width: 500px;
+  align-self: center;
+  color: var(--veryDarkBlue);
+  margin-bottom: 1.4rem;
+}
+.c-top-info__description {
+  font-weight: 200;
+  max-width: 500px;
+}
+
+/* ============================ */
+.c-cards {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "supervisor t-builder calculator"
+    ". karma .";
+  padding: 6rem;
+  gap: 3rem;
+  max-width: 1211px;
+}
+
+.c-cards__card {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  border-radius: 0.8rem;
+  box-shadow: 3px 6px 10px var(--grayishBlue);
+  background-color: #ffffff;
+  transition: 0.3s ease-in-out;
+  max-width: 100%;
+}
+@media (min-width: 1024px) {
+  .c-cards__card:hover {
+    box-shadow: 5px 8px 12px var(--grayishBlue);
+  }
+}
+.c-cards__subtitle {
+  color: var(--veryDarkBlue);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.c-cards__description {
+  font-weight: 200;
+  font-size: 1.2rem;
+  padding-right: 2rem;
+  margin-bottom: 4rem;
+}
+.c-cards__image {
+  width: 64px;
+  height: 64px;
+  align-self: flex-end;
+  margin-bottom: 0.5rem;
+}
+/* ---------------------------- */
+.c-cards__card.supervisor {
+  grid-area: supervisor;
+  transform: translateY(55%);
+  border-top: 3px solid var(--cyan);
+}
+/* ---------------------------- */
+.c-cards__card.team-builder {
+  grid-area: t-builder;
+  border-top: 3px solid var(--red);
+}
+/* ---------------------------- */
+.c-cards__card.calculator {
+  grid-area: calculator;
+  transform: translateY(55%);
+  border-top: 3px solid var(--blue);
+}
+/* ---------------------------- */
+.c-cards__card.karma {
+  grid-area: karma;
+  border-top: 3px solid var(--orange);
+}
+
+/* ############################ */
+
+.f-footer {
+  margin: 2rem;
+}
+.f-footer__attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.f-footer__link {
+  color: hsl(228, 45%, 44%);
+}

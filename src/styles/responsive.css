@@ -1,0 +1,82 @@
+@media (max-width: 768px) {
+  .c-top-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.2rem;
+    margin: 3rem 0;
+  }
+  .c-top-info__title {
+    font-weight: 300;
+    font-size: 2.4rem;
+    max-width: 100%;
+    align-self: center;
+    color: var(--veryDarkBlue);
+    margin-bottom: 1.6rem;
+  }
+  .c-top-info__description {
+    padding: 0 .8rem;
+  }
+
+  /* ====================== */
+
+  .c-cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    gap: 2.6rem;
+    max-width: 100%;
+  }
+  .c-cards__card {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    width: 100%;
+  }
+  .c-cards__subtitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .c-cards__description {
+    font-size: 1.3rem;
+    padding-right: 1rem;
+  }
+  .c-cards__image {
+    width: 55px;
+    height: 55px;
+    align-self: flex-end;
+    margin-bottom: 0.5rem;
+  }
+  .c-cards__card.supervisor {
+    transform: none;
+  }
+  .c-cards__card.calculator {
+    transform: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .c-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "supervisor t-builder"
+      "calculator karma";
+    place-items: center;
+    place-content: center;
+    padding: 4rem;
+    max-width: 100%;
+  }
+  .c-cards__card {
+    width: 100%;
+  }
+  .c-cards__card.supervisor {
+    transform: translateY(0);
+  }
+  .c-cards__card.calculator {
+    transform: translateY(0);
+  }
+}
