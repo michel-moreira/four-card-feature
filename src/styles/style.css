@@ -90,23 +90,67 @@ main {
 .c-cards__card.supervisor {
   grid-area: supervisor;
   transform: translateY(55%);
-  border-top: 3px solid var(--cyan);
+  border: 3px solid var(--cyan);
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+@media (min-width: 1024px) {
+  .c-cards__card.supervisor:hover {
+    border: 3px solid var(--cyan);
+    border-right: 1px solid var(--cyan);
+    border-left: 1px solid var(--cyan);
+    border-bottom: 1px solid var(--cyan);
+  }
 }
 /* ---------------------------- */
 .c-cards__card.team-builder {
   grid-area: t-builder;
   border-top: 3px solid var(--red);
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+@media (min-width: 1024px) {
+  .c-cards__card.team-builder:hover {
+    border: 3px solid var(--red);
+    border-right: 1px solid var(--red);
+    border-left: 1px solid var(--red);
+    border-bottom: 1px solid var(--red);
+  }
 }
 /* ---------------------------- */
 .c-cards__card.calculator {
   grid-area: calculator;
   transform: translateY(55%);
-  border-top: 3px solid var(--blue);
+  border: 3px solid var(--blue);
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+@media (min-width: 1024px) {
+  .c-cards__card.calculator:hover {
+    border: 3px solid var(--blue);
+    border-right: 1px solid var(--blue);
+    border-left: 1px solid var(--blue);
+    border-bottom: 1px solid var(--blue);
+  }
 }
 /* ---------------------------- */
 .c-cards__card.karma {
   grid-area: karma;
-  border-top: 3px solid var(--orange);
+  border: 3px solid var(--orange);
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+@media (min-width: 1024px) {
+  .c-cards__card.karma:hover {
+    border: 3px solid var(--orange);
+    border-right: 1px solid var(--orange);
+    border-left: 1px solid var(--orange);
+    border-bottom: 1px solid var(--orange);
+  }
 }
 
 /* ############################ */
